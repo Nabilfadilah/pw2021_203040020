@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 
 if (!isset($_SESSION["username"])) {
@@ -24,6 +24,7 @@ if (isset($_GET['cari'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +32,7 @@ if (isset($_GET['cari'])) {
     <title>Tubes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <div class="add">
@@ -45,46 +47,51 @@ if (isset($_GET['cari'])) {
         </div>
         <table class="table table-bordered">
             <thead>
-            <tr>
-                <th>No</th>
-                <th>Opsi</th>
-                <th>Foto</th>
-                <th>Nama</th>
-                <th>Ukuran</th>
-                <th>Deskripsi</th>
-                <th>Harga</th>
-                <th>Stok</th>
-                <th>Produk</th>
-            </tr>
-        </thead>  
+                <tr>
+                    <th>No</th>
+                    <th>Opsi</th>
+                    <th>Foto</th>
+                    <th>Nama</th>
+                    <th>Ukuran</th>
+                    <th>Deskripsi</th>
+                    <th>Harga</th>
+                    <th>Stok</th>
+                    <th>Produk</th>
+                </tr>
+            </thead>
 
-        <?php if (empty($tabel_product)) : ?>
+            <?php if (empty($tabel_product)) : ?>
                 <tr>
                     <td colspan="7">
                         <h1>Produk Tidak Ditemukan</h1>
                     </td>
                 </tr>
-        <?php else : ?> 
-        <?php $i = 1; ?>
-        <?php foreach ($tabel_product as $tp) : ?>
-            <tr>
-                <td><?= $i; ?></td>
-                <td>
-                    <button><div class="update"><a href="ubah.php?id=<?= $tp['id']; ?>">Ubah</a></div></button>
-                    <button><div class="delete"><a href="hapus.php?id=<? $tp['id']; ?>" onclick="return confirm('Hapus Data??')">Hapus</a></div></button>
-                </td>
-                <td><img src="../assets/img/<?= $tp["img"]; ?>" alt=""></td>
-                <td><?= $tp["nama"] ?></td>
-                <td><?= $tp["ukuran"] ?></td>
-                <td><?= $tp["deskripsi"] ?></td>
-                <td><?= $tp["harga"] ?></td>
-                <td><?= $tp["stok"] ?></td>
-                <td><button><?= $tp["produk"] ?></button></td>
-            </tr>
-        <?php $i++; ?>
-        <?php endforeach; ?> 
-        <?php endif; ?>
+            <?php else : ?>
+                <?php $i = 1; ?>
+                <?php foreach ($tabel_product as $tp) : ?>
+                    <tr>
+                        <td><?= $i; ?></td>
+                        <td>
+                            <button>
+                                <div class="update"><a href="ubah.php?id=<?= $tp['id']; ?>">Ubah</a></div>
+                            </button>
+                            <button>
+                                <div class="delete"><a href="hapus.php?id=<? $tp['id']; ?>" onclick="return confirm('Hapus Data??')">Hapus</a></div>
+                            </button>
+                        </td>
+                        <td><img src="../assets/img/<?= $tp["img"]; ?>" alt=""></td>
+                        <td><?= $tp["nama"] ?></td>
+                        <td><?= $tp["ukuran"] ?></td>
+                        <td><?= $tp["deskripsi"] ?></td>
+                        <td><?= $tp["harga"] ?></td>
+                        <td><?= $tp["stok"] ?></td>
+                        <td><button><?= $tp["produk"] ?></button></td>
+                    </tr>
+                    <?php $i++; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
     </div>
-    
+
 </body>
+
 </html>
