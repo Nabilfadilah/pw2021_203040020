@@ -49,20 +49,9 @@ $tabel_product = query("SELECT * FROM tabel_product")
 
     <!-- sidenav -->
     <ul class="sidenav" id="mobile-nav">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="assets/img/1.jpg">
-                </div>
-                <a href="#user"><img class="circle" src="assets/slider/slider.jpg"></a>
-                <a href="#name"><span class="white-text name">Zibatek Shoes</span></a>
-            </div>
-        </li>
-
         <li><a href="php/login.php">Sign In</a></li>
         <li><a href="#Buy Now">Buy Now</a></li>
         <li><a href="#services">Services</a></li>
-
     </ul>
 
     <!-- slider -->
@@ -103,7 +92,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
     <section id="services" class="services grey lighten-3 scrollspy">
         <div class="container services">
             <div class="row">
-                <h3 class="light center black-text text-accent-2">Our Services</h3>
+                <h3 class="light center black-text text-accent-2"><b>Our Services</b></h3>
                 <div class="col m4 s12">
                     <div class="card-panel center">
                         <i class="material-icons medium">check</i>
@@ -130,6 +119,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
     </section>
 
     <!-- card -->
+    <h3 class="light center black-text text-brown darken-4"><b>Daftar Produk</b></h3><br>
     <div class="row">
         <?php if (empty($tabel_product)) : ?>
             <h1>Data tidak ditemukan</h1>
@@ -158,7 +148,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
         <div class="parallax"><img src="assets/slider/buy.jpg"></div>
         <div class="parallax-container scrollspy">
             <div class="parallax"><img src=""></div>
-            <h3 class="light black-text text-darken-2 center">Buy Now</h3>
+            <h3 class="light black-text text-darken-2 center"><b>Buy Now</b></h3>
 
 
             <div class="container Buy Now">
@@ -251,7 +241,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
     <!-- addres -->
     <div class="tm-container-inner-2 tm-map-section">
         <div class="row">
-            <h3 class="light black-text text-darken-2 center">Address</h3>
+            <h3 class="light black-text text-darken-2 center"><b>Address</b></h3>
             <div class="col-12">
                 <div class="tm-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8110889938143!2d107.61482391459265!3d-6.913177095004855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e63392af5681%3A0x6ffdbde1e1fed928!2sJl.%20Sumbawa%2011%2C%20Merdeka%2C%20Kec.%20Sumur%20Bandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040113!5e0!3m2!1sid!2sid!4v1617866380347!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -281,7 +271,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
         const slider = document.querySelectorAll('.slider');
         M.Slider.init(slider, {
             indicators: false,
-            height: 500,
+            height: 600,
             transition: 600,
             interval: 3000
         });
