@@ -99,7 +99,6 @@ if (isset($_POST['ubah'])) {
                             <button type="submit">
                                 <a href="admin.php" style="text-decoration: none; color: black;">Kembali</a>
                             </button>
-
                         </div>
                     </form>
                 </div>

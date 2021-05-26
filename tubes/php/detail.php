@@ -87,7 +87,6 @@ $tabel_product = query("SELECT * FROM tabel_product WHERE id = $id")[0];
                 </div>
             </div>
         </div>
-
         <button class="waves-effect grey darken-4 lighten-1 btn-small">
             <i class="material-icons right">chevron_left</i><a href="../index.php" style="color: white;">Kembali</a>
         </button>

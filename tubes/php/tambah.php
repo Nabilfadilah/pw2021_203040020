@@ -101,7 +101,6 @@ if (isset($_POST['tambah'])) {
                             <button type="submit">
                                 <a href="admin.php" style="text-decoration: none; color: black;">Kembali</a>
                             </button>
-
                         </div>
                     </form>
                 </div>

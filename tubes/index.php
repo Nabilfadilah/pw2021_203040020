@@ -104,7 +104,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
                     <div class="card-panel center">
                         <i class="material-icons medium">redeem</i>
                         <h5>Pengemasan</h5>
-                        <p>packing barang sesuai dengan standar pengemasan produk, terdiri dari karus dan plastik toko kami.</p>
+                        <p>packing barang sesuai dengan standar pengemasan produk, terdiri dari kardus dan plastik toko.</p>
                     </div>
                 </div>
                 <div class="col m4 s12">
@@ -149,8 +149,6 @@ $tabel_product = query("SELECT * FROM tabel_product")
         <div class="parallax-container scrollspy">
             <div class="parallax"><img src=""></div>
             <h3 class="light black-text text-darken-2 center"><b>Buy Now</b></h3>
-
-
             <div class="container Buy Now">
                 <div class="row">
                     <form>

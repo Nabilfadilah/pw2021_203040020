@@ -88,7 +88,7 @@ function ubah($data)
 
     return mysqli_affected_rows($conn);
 }
-
+// functions untuk mencari produk
 function cari($keyword)
 {
     $conn = koneksi();

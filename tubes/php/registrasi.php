@@ -70,6 +70,7 @@ if (isset($_POST["register"])) {
                                 <i class="material-icons right">chevron_left</i>
                             </button>
                     </form>
+
                 </div>
             </div>
         </div>
