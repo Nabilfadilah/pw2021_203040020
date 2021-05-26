@@ -94,14 +94,11 @@
   <section id="kuliah" class="kuliah scrollspy"><br></section>
   <div class="parallax-container scrollspy">
     <div class="parallax"><img src="tubes/assets/slider/admin.jpg"></div>
-    <h3 class="light black-text text-darken-2 center">Kuliah</h3>
+    <h3 class="light black-text text-darken-4 center"><b>Kuliah</b></h3>
     <table>
-      <tr>
-        <td style="background-color: antiquewhite; color: black;">Repositories</td>
-      <tr>
-        <td>
-          <button><a href="kuliah/pertemuan2/" style="color: black;">Pertemuan_2</a></button>
-        </td>
+      <td>
+        <button><a href="kuliah/pertemuan2/" style="color: black;">Pertemuan_2</a></button>
+      </td>
       </tr>
       <tr>
         <td>
@@ -162,14 +159,11 @@
   <section id="praktikum" class="praktikum scrollspy"><br></section>
   <div class="parallax-container scrollspy">
     <div class="parallax"><img src="tubes/assets/slider/admin.jpg"></div>
-    <h3 class="light black-text text-darken-2 center">Praktikum</h3>
+    <h3 class="light black-text text-darken-4 center"><b>Praktikum</b></h3>
     <table>
-      <tr>
-        <td style="background-color: antiquewhite; color: black;">Repositories</td>
-      <tr>
-        <td>
-          <button><a href="praktikum/Tugas/" style="color: black;">Tugas_1</a></button>
-        </td>
+      <td>
+        <button><a href="praktikum/Tugas/" style="color: black;">Tugas_1</a></button>
+      </td>
       </tr>
       <tr>
         <td>
@@ -206,16 +200,13 @@
     <div class="parallax-container scrollspy">
       <div class="parallax"><img src="tubes/assets/slider/admin.jpg"></div>
       <div class="container">
-        <h3 class="light center black-text text-darken-2">Tugas Besar</h3>
-        <p style="text-align: center;">Untuk menggunakan halaman admin silahkan ketikan pada saat <b>Log In</b></p>
-        <h5 class="light black-text text-darken-2 center"><b>Username: </b>gordon <b>Password: </b> 12345</h5>
+        <h3 class="light center black-text text-darken-2"><b>Tugas Besar</b></h3>
+        <p style="text-align: center;"><b>Untuk menggunakan halaman admin silahkan ketikan pada saat Log In</b></p>
+        <h5 class="light black-text text-darken-2 center"><b>Username: "gordon" <br><br> Password: "12345"</b></h5>
         <table>
-          <tr>
-            <td style="background-color: antiquewhite; color: black;">Repositories</td>
-          <tr>
-            <td>
-              <button><a href="tubes/index.php" style="color: black;">Tugas Besar</a></button>
-            </td>
+          <td>
+            <button><a href="tubes/index.php" style="color: black;">Tugas Besar</a></button>
+          </td>
           </tr>
           </tr>
         </table>

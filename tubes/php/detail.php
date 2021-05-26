@@ -36,7 +36,39 @@ $tabel_product = query("SELECT * FROM tabel_product WHERE id = $id")[0];
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<style>
+    body {
+        background: white;
+        color: white;
+        font-family: sans-serif;
+        letter-spacing: .7px;
+    }
+
+    .penjelasan {
+        text-align: justify;
+        margin-top: -20px;
+    }
+
+    .container {
+        background-color: white;
+        padding: 20px;
+    }
+
+    .card {
+        padding: 61px;
+        border-radius: 10px;
+        background: black;
+    }
+
+    .gambar {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+</style>
+
+
+<body style="background-image: url(../assets/slider/detail.jpg); background-size: 512px;">
     <div class="container">
         <div class="row">
             <div class="col m4">
@@ -50,7 +82,7 @@ $tabel_product = query("SELECT * FROM tabel_product WHERE id = $id")[0];
                 <div class="card">
                     <div class="keterangan">
 
-                        <table style="color: black;">
+                        <table style="color: white;">
                             <tr>
                                 <td><b>Nama</b></td>
                                 <td><b> : </b></td>
@@ -80,9 +112,9 @@ $tabel_product = query("SELECT * FROM tabel_product WHERE id = $id")[0];
             <div class="col m12">
 
                 <div class="card">
-                    <div class="penjelasan" style="color: black;">
-                        <h3>Penjelasan Singkat</h3>
-                        <p><?= $tabel_product['deskripsi'] ?></p>
+                    <div class="penjelasan" style="color: white;">
+                        <h4 class="center">Detail</h4>
+                        <p class="center"><?= $tabel_product['deskripsi'] ?></p>
                     </div>
                 </div>
             </div>

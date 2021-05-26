@@ -32,7 +32,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
 
     <!-- navbar -->
     <div class="navbar-fixed">
-        <nav class="blue-grey darken-2">
+        <nav class="grey darken-4">
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="#home" class="brand-logo right">Zibantek Shoes</a>
@@ -132,7 +132,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
                             <p class="foto">
                         </div>
                         </p>
-                        <div class="card-action">
+                        <div class="card-action black">
                             <a href="php/detail.php?id=<?= $tp['id'] ?>">
                                 <?= $tp["nama"] ?>
                             </a>
@@ -212,12 +212,12 @@ $tabel_product = query("SELECT * FROM tabel_product")
                             </div>
                         </div>
                         <div style="text-align: center">
-                            <button type="submit" class="btn blue-grey darken-2">Buy</button>
+                            <button type="submit" class="btn grey darken-4">Buy</button>
                         </div>
                 </div>
                 </form>
                 <div class="col m5 s12">
-                    <div class="card-panel blue-grey darken-2 center white-text">
+                    <div class="card-panel grey darken-4 center white-text">
                         <i class="material-icons">phone_in_talk</i>
                         <h5>Contact</h5>
                     </div>
@@ -249,7 +249,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
     </div>
 
     <!-- footer -->
-    <footer class="blue-grey darken-2 white-text center">
+    <footer class="grey darken-4 white-text center">
         <p>Zibantek Shoes. @copyright 2021</p>
     </footer>
 
@@ -269,7 +269,7 @@ $tabel_product = query("SELECT * FROM tabel_product")
         const slider = document.querySelectorAll('.slider');
         M.Slider.init(slider, {
             indicators: false,
-            height: 600,
+            height: 630,
             transition: 600,
             interval: 3000
         });
